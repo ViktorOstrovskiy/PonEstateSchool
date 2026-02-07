@@ -1,0 +1,27 @@
+{
+  "name": "pon-school-bot",
+  "version": "2.0.0",
+  "description": "Telegram bot for PonEstate School with daily lessons and tests",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "create-codes": "node create-codes.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "school",
+    "education"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^4.12.2",
+    "pg": "^8.11.3",
+    "dotenv": "^16.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
