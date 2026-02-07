@@ -1,6 +1,7 @@
 require('dotenv').config()
 const { Telegraf, Markup } = require('telegraf')
 const { Pool } = require('pg')
+const express = require('express')
 
 // Перевірка змінних оточення
 if (!process.env.BOT_TOKEN) {
@@ -98,8 +99,33 @@ async function initDatabase() {
   }
 }
 
-// Ініціалізація БД та запуск бота
-async function startBot() {
+// Створюємо Express сервер для webhook
+const app = express()
+
+// Middleware для парсингу JSON
+app.use(express.json())
+
+// Endpoint для webhook від Telegram
+app.post(`/webhook/${process.env.BOT_TOKEN}`, (req, res) => {
+  bot.handleUpdate(req.body)
+  res.sendStatus(200)
+})
+
+// Health check endpoint (для Render)
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
+})
+
+// Root endpoint
+app.get('/', (req, res) => {
+  res.status(200).json({ 
+    message: 'PON School Bot is running',
+    status: 'ok'
+  })
+})
+
+// Ініціалізація БД та запуск сервера
+async function startServer() {
   try {
     // Тест з'єднання з БД
     await pool.query('SELECT NOW()')
@@ -108,17 +134,31 @@ async function startBot() {
     // Ініціалізація таблиці
     await initDatabase()
     
-    // Запуск бота
-    await bot.launch()
-    console.log('✅ Бот запущено!')
+    // Запускаємо Express сервер
+    const PORT = process.env.PORT || 3000
+    app.listen(PORT, () => {
+      console.log(`✅ Сервер запущено на порту ${PORT}`)
+      console.log(`✅ Webhook endpoint: /webhook/${process.env.BOT_TOKEN}`)
+      console.log(`✅ Health check: /health`)
+    })
+    
+    // Налаштовуємо webhook (якщо вказано WEBHOOK_URL)
+    if (process.env.WEBHOOK_URL) {
+      const webhookUrl = `${process.env.WEBHOOK_URL}/webhook/${process.env.BOT_TOKEN}`
+      await bot.telegram.setWebhook(webhookUrl)
+      console.log(`✅ Webhook встановлено: ${webhookUrl}`)
+    } else {
+      console.log('⚠️  WEBHOOK_URL не встановлено. Встанови webhook вручну через Bot API.')
+    }
+    
   } catch (err) {
     console.error('❌ Помилка запуску:', err.message)
     process.exit(1)
   }
 }
 
-// Запускаємо бота
-startBot()
+// Запускаємо сервер
+startServer()
 
 // База уроків (10 уроків)
 // Формат: заголовок, текст, посилання на матеріал, посилання на домашнє завдання
@@ -781,17 +821,27 @@ bot.catch((err, ctx) => {
 })
 
 // Graceful shutdown
-process.once('SIGINT', () => {
-  console.log('🛑 Отримано SIGINT, зупиняємо бота...')
-  bot.stop('SIGINT')
-  pool.end()
-  process.exit(0)
+process.once('SIGINT', async () => {
+  console.log('🛑 Отримано SIGINT, зупиняємо сервер...')
+  try {
+    await bot.telegram.deleteWebhook()
+    await pool.end()
+    process.exit(0)
+  } catch (err) {
+    console.error('Помилка при закритті:', err)
+    process.exit(1)
+  }
 })
 
-process.once('SIGTERM', () => {
-  console.log('🛑 Отримано SIGTERM, зупиняємо бота...')
-  bot.stop('SIGTERM')
-  pool.end()
-  process.exit(0)
+process.once('SIGTERM', async () => {
+  console.log('🛑 Отримано SIGTERM, зупиняємо сервер...')
+  try {
+    await bot.telegram.deleteWebhook()
+    await pool.end()
+    process.exit(0)
+  } catch (err) {
+    console.error('Помилка при закритті:', err)
+    process.exit(1)
+  }
 })
 
