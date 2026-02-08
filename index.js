@@ -180,11 +180,15 @@ const lessons = [
       },
       {
         title: 'Как зарабатывают агенты в Батуми',
-        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.f3gau11buy43'
+        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.f3gau11buy43#heading=h.qlflok8aouf3'
+      },
+      {
+        title: 'Структура работы в PON Estate',
+        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.wshq4anvgeav'
       },
       {
         title: 'Цели обучения и правила курса',
-        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.9tfoxz9ptwgi'
+        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.9tfoxz9ptwgi#heading=h.s04kszwhknit'
       }
     ],
     homeworkUrl: 'https://forms.gle/51zvGQH7waJT52XdA',
@@ -206,19 +210,19 @@ const lessons = [
     materials: [
       {
         title: 'Типы объектов',
-        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.d7qzm4ob1fg7'
+        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.0'
       },
       {
         title: 'Застройщики и проекты',
-        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.d7qzm4ob1fg7'
+        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.2dife1keycw9'
       },
       {
         title: 'Первичка / вторичка',
-        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.d7qzm4ob1fg7'
+        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.isc9iikas0i'
       },
       {
         title: 'Инвестиции и жизнь',
-        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.d7qzm4ob1fg7'
+        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.d7qzm4ob1fg7#heading=h.ccxn31g9jkss'
       }
     ],
     homeworkUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSda-eFMYysVAJpa33H7p-6RA2RDW9Sm2fJoHACxPiu5WECE9Q/viewform?usp=header',
@@ -242,19 +246,19 @@ const lessons = [
     materials: [
       {
         title: 'Кто такой лид',
-        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.0'
+        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.0#heading=h.26x3j6qnwix7'
       },
       {
         title: 'Откуда приходят клиенты',
-        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.ogbr38nve0k9'
+        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.ogbr38nve0k9#heading=h.tqlzn1nt6cct'
       },
       {
         title: 'Холодные, тёплые и горячие лиды',
-        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.11yg0hd7rzpg'
+        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.11yg0hd7rzpg#heading=h.dvqovm74ap4o'
       },
       {
         title: 'Правила работы с лидами',
-        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.iqjhkagqmnt4'
+        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.iqjhkagqmnt4#heading=h.88uj9h9iqfu'
       }
     ],
     homeworkUrl: 'https://forms.gle/a9vTP9aD4dfBvyVF7',
@@ -280,11 +284,15 @@ const lessons = [
     materials: [
       {
         title: 'Как писать первое сообщение клиенту',
-        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.0'
+        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.0#heading=h.ri6h7p5b13yu'
+      },
+      {
+        title: 'Особенности общения',
+        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.l5o4h5enfd91#heading=h.iy9kpg8dmcr1'
       },
       {
         title: 'Этика общения с клиентом',
-        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.l5o4h5enfd91'
+        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.l6hv9ds355rp#heading=h.o597rqpcyk4t'
       },
       {
         title: 'Шаблоны сообщений',
@@ -292,7 +300,7 @@ const lessons = [
       },
       {
         title: 'Чего нельзя писать и говорить клиенту',
-        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.gkok157u1tz8'
+        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.gkok157u1tz8#heading=h.1hzjpv5je7uy'
       }
     ],
     homeworkUrl: 'https://forms.gle/63k8QNfiKwNy1ahK6',
@@ -317,19 +325,19 @@ const lessons = [
     materials: [
       {
         title: 'Как выходить на звонок',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_5_1'
+        url: 'https://docs.google.com/document/d/1FkTQ-qN7IorpYrG7T1wigXRtUyFYiSG14E77Lqi4tKs/edit?tab=t.0'
       },
       {
         title: 'Структура звонка',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_5_2'
+        url: 'https://docs.google.com/document/d/1FkTQ-qN7IorpYrG7T1wigXRtUyFYiSG14E77Lqi4tKs/edit?tab=t.9nz94zacf5be'
       },
       {
         title: 'Первые скрипты',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_5_3'
+        url: 'https://docs.google.com/document/d/1FkTQ-qN7IorpYrG7T1wigXRtUyFYiSG14E77Lqi4tKs/edit?tab=t.hr9rq6tgu79s'
       },
       {
         title: 'Страхи и возражения',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_5_4'
+        url: 'https://docs.google.com/document/d/1FkTQ-qN7IorpYrG7T1wigXRtUyFYiSG14E77Lqi4tKs/edit?tab=t.x3ptbuukciky'
       }
     ],
     homeworkUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfyr5smdXx1UoLXYeVIq288XMD7qh2lI2Xhd-g6eZOBAkJLPQ/viewform?usp=header',
