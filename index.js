@@ -768,8 +768,6 @@ bot.hears('Продолжить ▶️', async (ctx) => {
     console.log(`   Сегодняшняя дата: ${todayDate}`)
 
     // Перевірка чи можна отримати новий урок (1 урок = 1 день)
-    // ВРЕМЕННО ЗАКОМЕНТИРОВАНО ДЛЯ ТЕСТИРОВАНИЯ - можно просмотреть все уроки сразу
-    /*
     if (user.last_lesson_date) {
       const lastLessonDateStr = user.last_lesson_date.toISOString().split('T')[0]
       if (lastLessonDateStr === todayDate) {
@@ -780,8 +778,6 @@ bot.hears('Продолжить ▶️', async (ctx) => {
     } else {
       console.log('   ✅ Доступ разрешен: last_lesson_date не установлен')
     }
-    */
-    console.log('   ⚠️ ТЕСТОВЫЙ РЕЖИМ: проверка даты отключена')
 
     // Перевірка чи завершено курс (якщо вже пройдено всі 10 уроків)
     if (user.current_lesson > lessons.length) {
