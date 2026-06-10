@@ -385,7 +385,7 @@ const lessons = [
       },
       {
         title: 'Установка контакта:',
-        url: 'https://drive.google.com/drive/folders/1U8z0hJkszhzGPqZTkG2WV8Ex7HH4xDqQ'
+        url: 'https://drive.google.com/file/d/1TgMQ4a683QGq0_bLDqx0HR4p3hs-Ii7C/view'
       },
       {
         title: 'Этап 3 выявление потребностей:',
