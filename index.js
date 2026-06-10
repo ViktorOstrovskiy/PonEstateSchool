@@ -19,8 +19,8 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 // Підключення до PostgreSQL
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  ssl: process.env.DATABASE_URL.includes('localhost') 
-    ? false 
+  ssl: process.env.DATABASE_URL.includes('localhost')
+    ? false
     : { rejectUnauthorized: false }
 })
 
@@ -118,7 +118,7 @@ app.get('/health', (req, res) => {
 
 // Root endpoint
 app.get('/', (req, res) => {
-  res.status(200).json({ 
+  res.status(200).json({
     message: 'PON School Bot is running',
     status: 'ok'
   })
@@ -130,10 +130,10 @@ async function startServer() {
     // Тест з'єднання з БД
     await pool.query('SELECT NOW()')
     console.log('✅ Підключено до БД')
-    
+
     // Ініціалізація таблиці
     await initDatabase()
-    
+
     // Запускаємо Express сервер
     const PORT = process.env.PORT || 3000
     app.listen(PORT, () => {
@@ -141,16 +141,19 @@ async function startServer() {
       console.log(`✅ Webhook endpoint: /webhook/${process.env.BOT_TOKEN}`)
       console.log(`✅ Health check: /health`)
     })
-    
+
     // Налаштовуємо webhook (якщо вказано WEBHOOK_URL)
     if (process.env.WEBHOOK_URL) {
       const webhookUrl = `${process.env.WEBHOOK_URL}/webhook/${process.env.BOT_TOKEN}`
       await bot.telegram.setWebhook(webhookUrl)
       console.log(`✅ Webhook встановлено: ${webhookUrl}`)
     } else {
-      console.log('⚠️  WEBHOOK_URL не встановлено. Встанови webhook вручну через Bot API.')
+      // Локальний режим: працюємо через long polling замість webhook
+      await bot.telegram.deleteWebhook()
+      await bot.launch()
+      console.log('✅ Бот запущено локально через polling. Можна писати йому в Telegram.')
     }
-    
+
   } catch (err) {
     console.error('❌ Помилка запуску:', err.message)
     process.exit(1)
@@ -172,23 +175,25 @@ const lessons = [
 • Как зарабатывают агенты в Батуми
 • Структура работы в PON Estate
 • Цели обучения и правила курса
-• Знакомство с руководителем компании Андреем Пономаренко`,
+• Знакомство с руководителем компании Андреем Пономаренко
+• Ссылка на видео урок: https://youtu.be/iSSxqqSrRy8
+`,
     materials: [
       {
         title: 'Кто такой агент недвижимости',
-        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.0'
+        url: 'https://drive.google.com/file/d/1ltsaAcCRkzfFZcE6lBt-B9HyD3rQrB3Z/view'
       },
       {
         title: 'Как зарабатывают агенты в Батуми',
-        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.f3gau11buy43#heading=h.qlflok8aouf3'
+        url: 'https://drive.google.com/file/d/1Xc3HUREfIshnU7j3dYWKN37HyKNsRXVj/view'
       },
       {
         title: 'Структура работы в PON Estate',
-        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.wshq4anvgeav'
+        url: 'https://drive.google.com/file/d/1g0T6TFsKTakZ3O7BzNFXPrRZhAEbOjJP/view'
       },
       {
         title: 'Цели обучения и правила курса',
-        url: 'https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.9tfoxz9ptwgi#heading=h.s04kszwhknit'
+        url: 'https://drive.google.com/file/d/1z79iBA4BbZP4EjpPHmCHe2O23-gsCn38/view'
       }
     ],
     homeworkUrl: 'https://forms.gle/51zvGQH7waJT52XdA',
@@ -205,24 +210,25 @@ const lessons = [
 • Застройщики и проекты
 • Первичный и вторичный рынок
 • Инвестиции и жизнь
+• Ссылка на видео урок: https://youtu.be/KKR9dKNUFgo
 
 Понимание рынка — основа успеха!`,
     materials: [
       {
         title: 'Типы объектов',
-        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.0'
+        url: 'https://drive.google.com/file/d/1cwygzdWjaZ1rbT0nEoToffRs37YXwyG6/view'
       },
       {
         title: 'Застройщики и проекты',
-        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.2dife1keycw9'
+        url: 'https://drive.google.com/file/d/1qmAAs6gy_Olmc-UGoNIMc1v6QTLY3imz/view'
       },
       {
         title: 'Первичка / вторичка',
-        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.isc9iikas0i'
+        url: 'https://drive.google.com/file/d/1FwJJXPE_8xznymL3dhX6XBeozc5d4F1K/view'
       },
       {
         title: 'Инвестиции и жизнь',
-        url: 'https://docs.google.com/document/d/1M5_BdAznd0VlvFZ8xiERY-Ks8nIj0DsKL3n3oRZyZec/edit?tab=t.d7qzm4ob1fg7#heading=h.ccxn31g9jkss'
+        url: 'https://drive.google.com/file/d/1Edn0jbbiVAztAckxNNugy0Xe9o-_fucy/view'
       }
     ],
     homeworkUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSda-eFMYysVAJpa33H7p-6RA2RDW9Sm2fJoHACxPiu5WECE9Q/viewform?usp=header',
@@ -241,25 +247,50 @@ const lessons = [
 • Откуда приходят клиенты
 • Холодные, тёплые и горячие лиды
 • Правила работы с лидами
-
+• Как писать первое сообщение клиенту
+• WhatsApp  Telegram  Instagram
+• Инструкция по этике общения с клиентами
+• Шаблоны сообщений для общения с клиентами
+• Чего нельзя писать и говорить клиенту
+• Ссылка на видео урок: https://youtu.be/gYwC9wo_vt4
 Инструкция по обработке лидов есть в базе знаний.`,
     materials: [
       {
         title: 'Кто такой лид',
-        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.0#heading=h.26x3j6qnwix7'
+        url: 'https://drive.google.com/file/d/1JJcr2QteCCNztCwvi5QM7zYGitmBx8uf/view'
       },
       {
         title: 'Откуда приходят клиенты',
-        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.ogbr38nve0k9#heading=h.tqlzn1nt6cct'
+        url: 'https://drive.google.com/file/d/1nc6mcUcYKJYeZEHExTZu3ZoQj_PuSLx8/view'
       },
       {
         title: 'Холодные, тёплые и горячие лиды',
-        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.11yg0hd7rzpg#heading=h.dvqovm74ap4o'
+        url: 'https://drive.google.com/file/d/1_oKiyFORu9aryPoYYLDjSIzpxQHaSrxu/view'
       },
       {
         title: 'Правила работы с лидами',
-        url: 'https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.iqjhkagqmnt4#heading=h.88uj9h9iqfu'
-      }
+        url: 'https://drive.google.com/file/d/1-zAONmoY2m-nn0w6QwMqBHrIaFC8ALnQ/view'
+      },
+      {
+        title: 'Как писать первое сообщение клиенту',
+        url: 'https://drive.google.com/file/d/1phoR_eVQ4hRM_UbeoNiQDIGm6dgasKzp/view'
+      },
+      {
+        title: 'WhatsApp  Telegram  Instagram',
+        url: 'https://drive.google.com/file/d/1YD2P8blFhsDdFVNWRpWPaYDRiy8FhB9A/view'
+      },
+      {
+        title: 'Инструкция по этике общения с клиентами',
+        url: 'https://drive.google.com/file/d/1GB4ScZc66oa8CrEMBGBbDQhsTuuxblKr/view'
+      },
+      {
+        title: 'Шаблоны сообщений для общения с клиентами',
+        url: 'https://drive.google.com/file/d/1obSv6K-w18TbstvqE8ewXZYOrqy9jzh8/view'
+      },
+      {
+        title: 'Чего нельзя писать и говорить клиенту',
+        url: 'https://drive.google.com/file/d/1GuWCnqlK5aM02fev1NFl4QMCf8usU_aD/view'
+      },
     ],
     homeworkUrl: 'https://forms.gle/a9vTP9aD4dfBvyVF7',
     homeworkText: `Домашнее задание:
@@ -267,40 +298,41 @@ const lessons = [
 • Выписать основные ошибки новичков при работе с лидами
 • Кратко описать алгоритм работы с лидом
 • Как вы реагируете, когда клиент говорит "нет" несколько раз подряд? Что вы делаете дальше?
-• Изучить проект Next Group Address + ТЕСТ`,
+• Изучить проект Next Group Address + ТЕСТ
+`,
     additionalText: `Оставляю тебе всю информацию по проекту NEXT GROUP ADDRESS 📚 - https://docs.google.com/document/d/1EPxx6phfSSAnnZ9GeXN6mrvAhDcXTvTuVZfs0-ZQyS0/edit?tab=t.320226ujhzr6`
   },
   {
     title: 'ДЕНЬ 4 - Сообщения клиенту и коммуникация',
     text: `Сегодня ты узнаешь:
-• Как писать первое сообщение клиенту
-• WhatsApp / Telegram / Instagram: особенности общения
-• Этику общения с клиентом
-• Зачем и как выводить клиента на Zoom и личные встречи
-• Шаблоны сообщений
-• Чего нельзя писать и говорить клиенту
+• Звонок. Как правильно выходить на контакт
+• Структура звонка
+• Этика общения с клиентом
+• Страхи и возражения клиентов
+• Первые скрипты
+• Ссылка на видео урок: https://youtu.be/Hbi6CJexYQU
 
 Этика общения с клиентом и шаблоны сообщений есть в базе знаний.`,
     materials: [
       {
-        title: 'Как писать первое сообщение клиенту',
-        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.0#heading=h.ri6h7p5b13yu'
+        title: 'Звонок. Как правильно выходить на контакт',
+        url: 'https://drive.google.com/file/d/1K8n4Fp7wM4EssV9xAWMuruPFXSa9n4FM/view'
       },
       {
-        title: 'Особенности общения',
-        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.l5o4h5enfd91#heading=h.iy9kpg8dmcr1'
+        title: 'Структура звонка',
+        url: 'https://drive.google.com/file/d/13CAZqIcBG61Lj-Pci0t6CsdcottPXxVe/view'
       },
       {
         title: 'Этика общения с клиентом',
-        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.l6hv9ds355rp#heading=h.o597rqpcyk4t'
+        url: 'https://drive.google.com/file/d/16YqEINM2nh8DoA3WhG-swq6r1Jbv-wL4/view'
       },
       {
-        title: 'Шаблоны сообщений',
+        title: 'Страхи и возражения клиентов',
         url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.n53x4nrvf3lp'
       },
       {
-        title: 'Чего нельзя писать и говорить клиенту',
-        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.gkok157u1tz8#heading=h.1hzjpv5je7uy'
+        title: 'Первые скрипты',
+        url: 'https://drive.google.com/file/d/1vwNxNJDbVDQVQOO9EYFDWbgcxY8Zs1Qy/view'
       }
     ],
     homeworkUrl: 'https://forms.gle/63k8QNfiKwNy1ahK6',
@@ -315,29 +347,35 @@ const lessons = [
   {
     title: 'ДЕНЬ 5 - Звонки',
     text: `Сегодня ты узнаешь:
-• Как выходить на звонок
-• Структуру звонка
-• Первые скрипты
-• Страхи и возражения
+• Воронка продаж в недвижимости
+• Этапы воронки продаж в недвижимости
+• Подготовка к продаже
+• Установка контакта
+• Этап 3 выявление потребностей
+• Ссылка на видео урок: https://youtu.be/R8WgNiRBrNo
 
 Фишки: Живые звонки с клиентами
 Ученики присутствуют на реальных звонках топ-агентов и слушают, как закрываются сделки вживую или делают записи для прослушивания (надо показать пример, не только по скриптам).`,
     materials: [
       {
-        title: 'Как выходить на звонок',
-        url: 'https://docs.google.com/document/d/1FkTQ-qN7IorpYrG7T1wigXRtUyFYiSG14E77Lqi4tKs/edit?tab=t.0'
+        title: 'Воронка продаж в недвижимости:',
+        url: 'https://drive.google.com/file/d/1WkcePWlrbjdCJ5ANFFERtnmauaf26Rf-/view'
       },
       {
-        title: 'Структура звонка',
-        url: 'https://docs.google.com/document/d/1FkTQ-qN7IorpYrG7T1wigXRtUyFYiSG14E77Lqi4tKs/edit?tab=t.9nz94zacf5be'
+        title: 'Этапы воронки продаж в недвижимости:',
+        url: 'https://drive.google.com/file/d/1RpPd5DXuLOPc0vvB1Ed-xnwA6PU3uhL8/view'
       },
       {
-        title: 'Первые скрипты',
-        url: 'https://docs.google.com/document/d/1FkTQ-qN7IorpYrG7T1wigXRtUyFYiSG14E77Lqi4tKs/edit?tab=t.hr9rq6tgu79s'
+        title: 'Подготовка к продаже:',
+        url: 'https://drive.google.com/file/d/1FXn6iDuZPpE3tZRDEnU72QboIqlW7bIT/view'
       },
       {
-        title: 'Страхи и возражения',
-        url: 'https://docs.google.com/document/d/1FkTQ-qN7IorpYrG7T1wigXRtUyFYiSG14E77Lqi4tKs/edit?tab=t.x3ptbuukciky'
+        title: 'Установка контакта:',
+        url: 'https://drive.google.com/drive/folders/1U8z0hJkszhzGPqZTkG2WV8Ex7HH4xDqQ'
+      },
+      {
+        title: 'Этап 3 выявление потребностей:',
+        url: 'https://drive.google.com/file/d/1q7Ykgoto2K59wID4wGtGha3NjCZxf8Ai/view'
       }
     ],
     homeworkUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfyr5smdXx1UoLXYeVIq288XMD7qh2lI2Xhd-g6eZOBAkJLPQ/viewform?usp=header',
@@ -632,20 +670,20 @@ bot.start(async (ctx) => {
     console.log(`   Telegram ID: ${telegramId}`)
     console.log(`   Username: ${username}`)
     console.log(`   Сегодняшняя дата: ${todayDate}`)
-    
+
     await pool.query(`
       UPDATE users 
       SET current_lesson = 1, last_lesson_date = $2
       WHERE telegram_id = $1
     `, [telegramId, todayDate])
-    
+
     console.log(`   ✅ Пользователь обновлен: current_lesson=1, last_lesson_date=${todayDate}`)
 
     const lesson = lessons[0]
-    
+
     // Форматуємо повідомлення
     let message = `📘 ${lesson.title}\n\n${lesson.text}\n\n`
-    
+
     // Додаємо матеріали
     if (lesson.materials && lesson.materials.length > 0) {
       message += `📄 Материалы:\n`
@@ -655,7 +693,7 @@ bot.start(async (ctx) => {
     } else if (lesson.materialUrl) {
       message += `📄 Материал:\n${lesson.materialUrl}\n\n`
     }
-    
+
     // Додаємо домашнє завдання
     if (lesson.homeworkText) {
       message += `${lesson.homeworkText}\n\n`
@@ -663,14 +701,14 @@ bot.start(async (ctx) => {
     if (lesson.homeworkUrl) {
       message += `📝 Ссылка на тест:\n${lesson.homeworkUrl}\n\n`
     }
-    
+
     // Додаємо додатковий текст (якщо є)
     if (lesson.additionalText) {
       message += `${lesson.additionalText}\n\n`
     }
-    
+
     message += `После выполнения вернитесь завтра и нажмите "Продолжить".`
-    
+
     await ctx.reply(
       `Добро пожаловать, ${username}! 👋\n\n${message}`,
       Markup.keyboard([['Продолжить ▶️']]).resize()
@@ -708,7 +746,7 @@ bot.hears('Продолжить ▶️', async (ctx) => {
     }
 
     const todayDate = today()
-    
+
     // Логування для тестування
     console.log('🔍 Проверка доступа к уроку:')
     console.log(`   Telegram ID: ${telegramId}`)
@@ -769,7 +807,7 @@ bot.hears('Продолжить ▶️', async (ctx) => {
 
     // Форматуємо повідомлення
     let message = `📘 ${lesson.title}\n\n${lesson.text}\n\n`
-    
+
     // Додаємо матеріали
     if (lesson.materials && lesson.materials.length > 0) {
       message += `📄 Материалы:\n`
@@ -779,7 +817,7 @@ bot.hears('Продолжить ▶️', async (ctx) => {
     } else if (lesson.materialUrl) {
       message += `📄 Материал:\n${lesson.materialUrl}\n\n`
     }
-    
+
     // Додаємо домашнє завдання
     if (lesson.homeworkText) {
       message += `${lesson.homeworkText}\n\n`
@@ -787,12 +825,12 @@ bot.hears('Продолжить ▶️', async (ctx) => {
     if (lesson.homeworkUrl) {
       message += `📝 Ссылка на тест:\n${lesson.homeworkUrl}\n\n`
     }
-    
+
     // Додаємо додатковий текст (якщо є)
     if (lesson.additionalText) {
       message += `${lesson.additionalText}\n\n`
     }
-    
+
     message += `После выполнения вернитесь завтра и нажмите "Продолжить".`
 
     // Відправляємо урок
