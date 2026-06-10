@@ -348,7 +348,7 @@ const lessons = [
       },
       {
         title: 'Страхи и возражения клиентов',
-        url: 'https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.n53x4nrvf3lp'
+        url: 'https://drive.google.com/file/d/16YqEINM2nh8DoA3WhG-swq6r1Jbv-wL4/view'
       },
       {
         title: 'Первые скрипты',
