@@ -21,8 +21,28 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: process.env.DATABASE_URL.includes('localhost')
     ? false
-    : { rejectUnauthorized: false }
+    : { rejectUnauthorized: false },
+  connectionTimeoutMillis: 15000
 })
+
+// Neon (free) засинає при простої й рве idle-з'єднання — не даємо процесу впасти
+pool.on('error', (err) => {
+  console.error('⚠️  Помилка пулу БД (idle-з\'єднання):', err.message)
+})
+
+// Підключення з повторними спробами (Neon має «холодний старт» після сну)
+async function connectWithRetry(attempts = 6, delayMs = 4000) {
+  for (let i = 1; i <= attempts; i++) {
+    try {
+      await pool.query('SELECT NOW()')
+      return
+    } catch (err) {
+      console.error(`⚠️  Спроба ${i}/${attempts} підключення до БД: ${err.message} (code: ${err.code || '-'})`)
+      if (i === attempts) throw err
+      await new Promise((r) => setTimeout(r, delayMs))
+    }
+  }
+}
 
 // Автоматичне створення таблиці users (якщо не існує)
 async function initDatabase() {
@@ -127,8 +147,8 @@ app.get('/', (req, res) => {
 // Ініціалізація БД та запуск сервера
 async function startServer() {
   try {
-    // Тест з'єднання з БД
-    await pool.query('SELECT NOW()')
+    // Тест з'єднання з БД (з повторними спробами на випадок сну Neon)
+    await connectWithRetry()
     console.log('✅ Підключено до БД')
 
     // Ініціалізація таблиці
