@@ -23,7 +23,7 @@
     "telegraf": "^4.12.2"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "22.x"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
