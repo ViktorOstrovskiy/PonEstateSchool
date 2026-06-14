@@ -326,7 +326,6 @@ const lessons = [
     text: `Сегодня ты узнаешь:
 • Звонок. Как правильно выходить на контакт
 • Структура звонка
-• Этика общения с клиентом
 • Страхи и возражения клиентов
 • Первые скрипты
 • Ссылка на видео урок: https://youtu.be/Hbi6CJexYQU`,
@@ -338,10 +337,6 @@ const lessons = [
       {
         title: 'Структура звонка',
         url: 'https://drive.google.com/file/d/13CAZqIcBG61Lj-Pci0t6CsdcottPXxVe/view'
-      },
-      {
-        title: 'Этика общения с клиентом',
-        url: 'https://drive.google.com/file/d/16YqEINM2nh8DoA3WhG-swq6r1Jbv-wL4/view'
       },
       {
         title: 'Страхи и возражения клиентов',
