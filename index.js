@@ -459,24 +459,35 @@ https://drive.google.com/file/d/1Q5a8mBSwe-zcVmAa5KUjRNPJwGlLAO7a/view?usp=drive
 • Этапы воронки: лид → контакт → интерес → решение → сделка
 • Технику СПВ (свойство – преимущество – выгода)
 • Отработку ключевых возражений клиента: «дорого», «я подумаю», «я сравниваю», «мне не срочно»
-
-Техника СПВ есть в базе знаний.`,
+• Ссылка на видео урок: https://youtu.be/9B5lZzerj5w`,
     materials: [
       {
-        title: 'Что такое воронка продаж в недвижимости',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_6_1'
+        title: 'Презентация продукта',
+        url: 'https://drive.google.com/file/d/1-uo2EZtvQAnl5LvL3t1Z5w2ZhDijBTuP/view'
       },
       {
-        title: 'Этапы воронки',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_6_2'
+        title: 'Техника СПВ в недвижимости',
+        url: 'https://drive.google.com/file/d/1pMVdP4ANnS3fJrTG8AUJU3Wb8mxgU_C5/view'
       },
       {
-        title: 'Техника СПВ (свойство – преимущество – выгода)',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_6_3'
+        title: 'Шаблоны СПВ',
+        url: 'https://drive.google.com/file/d/1ahCW4pSmIGRiY3EQAU8m3yUjQVOeq3y4/view'
       },
       {
         title: 'Отработка возражений',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_6_4'
+        url: 'https://drive.google.com/file/d/1vAHkOx5h4JUKz4pW7XM8egDqwvM5610I/view'
+      },
+      {
+        title: 'Шаблоны отработки возражений',
+        url: 'https://drive.google.com/file/d/1P_mXiF9DIuRbTt_23N1nsw1tE1s8kBox/view'
+      },
+      {
+        title: 'Закрытие сделки',
+        url: 'https://drive.google.com/file/d/1Od_WllrS0RniNW_SAFCt1EvLg4Ajdpzo/view'
+      },
+      {
+        title: 'Послепродажное сопровождение',
+        url: 'https://drive.google.com/file/d/1iM2tJqyUNVGgYK5zkN3Dj071xhr16hJi/view'
       }
     ],
     homeworkUrl: 'https://forms.gle/mG3RHbaMdmeh6QmH6',
@@ -486,7 +497,19 @@ https://drive.google.com/file/d/1Q5a8mBSwe-zcVmAa5KUjRNPJwGlLAO7a/view?usp=drive
 • Написать пример ответа клиенту на возражение «дорого»
 • Подготовить вариант следующего шага для клиента после отказа
 • Как вы планируете развиваться в профессии в первые 3–6 месяцев работы?
-• Изучить проект SILK: Silk Towers - Green Cape Botanico + ТЕСТ`
+• Изучить проект SILK: Silk Towers - Green Cape Botanico + ТЕСТ`,
+    additionalText: `Оставляю тебе всю информацию по проекту  SILK: Silk Towers  📚
+Пожалуйста, внимательно изучи материал — это очень важно ❗
+📌 По этой информации позже будет тест.
+ 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
+
+https://drive.google.com/drive/folders/1qkh5pEZe2OxrXaoJAaKZgXEfgCJi7dXg?usp=drive_link
+
+https://drive.google.com/file/d/1QcDUwtN9_YjsuzV1rGGecQ85s0fnK_a0/view?usp=drive_link - ❗️ Обратите внимание!
+Представленная картинка носит исключительно ознакомительный характер и является примером.
+Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
+`
   },
   {
     title: 'ДЕНЬ 7 - Отработка возражений и этапы сделки',
