@@ -567,30 +567,27 @@ https://drive.google.com/file/d/16etnPETMMU_1mJYo0b2SKartfu77fEak/view - ❗️ 
 • Подготовку к показу объекта
 • Как вести клиента на показе
 • Типовые ошибки при показах
-
-Знакомство с РОПом Василием Каракезиди: запись видео-знакомства или проведение Zoom-встречи (мотивационный блок). Обсуждение психотипов клиентов.
-
-Разбор целевой аудитории есть в базе знаний.`,
+• Ссылка на видео урок: https://youtu.be/o9_3v-4exOo`,
     materials: [
       {
         title: 'Психотипы клиентов',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_8_1'
+        url: 'https://drive.google.com/file/d/1t3nFPedimZh_BTA2lVHtKPvPjrqw8c4Y/view'
       },
       {
         title: 'Разбор целевой аудитории',
-        url: 'https://docs.google.com/document/d/1JIHhJVjWAw_luE8czJqKn7ru5UTIvRRN9K8n18_v1BE/edit?tab=t.v6twkus3zx7b'
+        url: 'https://drive.google.com/file/d/1SsC2eGfRUdZPTFJNOn0BU48ODtJJ5_Py/view'
       },
       {
         title: 'Подготовка к показу объекта',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_8_3'
+        url: 'https://drive.google.com/file/d/1EZgqWs3O8C9DpGDRyCzqMTKqFUOz6Vog/view'
       },
       {
         title: 'Как вести клиента на показе',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_8_4'
+        url: 'https://drive.google.com/file/d/1eq-YaPFLIckAGOw5YQ6YDHoHP0GtnAWo/view?usp=sharing'
       },
       {
         title: 'Типовые ошибки при показах',
-        url: 'https://docs.google.com/document/d/YOUR_DOC_ID_8_5'
+        url: 'https://drive.google.com/file/d/14PN2-OOAG4OoYLWb9I1wlDkBMvwre4cq/view'
       }
     ],
     homeworkUrl: 'https://forms.gle/noHwcAbF1rJxGU8D8',
@@ -600,7 +597,19 @@ https://drive.google.com/file/d/16etnPETMMU_1mJYo0b2SKartfu77fEak/view - ❗️ 
 • Выписать этапы подготовки к показу
 • Перечислить типовые ошибки агентов на показах
 • Что для вас значит профессиональная этика в работе с клиентами?
-• Изучить проект Symbol Monogram + ТЕСТ`
+• Изучить проект Symbol Monogram + ТЕСТ`,
+    additionalText: `Оставляю тебе всю информацию по проекту  Symbol  Monogram 📚
+Пожалуйста, внимательно изучи материал — это очень важно ❗
+📌 По этой информации позже будет тест.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
+
+https://drive.google.com/drive/folders/15SO4OYD3t4PJbxXrHGOKxfoUaPEehso_?usp=drive_link
+
+https://drive.google.com/file/d/1CFLa7VrWCpHxCC9rY1MaAGLNHswvxZGW/view?usp=sharing - ❗️ Обратите внимание!
+Представленная картинка носит исключительно ознакомительный характер и является примером.
+Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
+`
   },
   {
     title: 'ДЕНЬ 9 - Чек-листы агента',
