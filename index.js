@@ -362,7 +362,7 @@ https://drive.google.com/file/d/1s7jiYLANly377z3HwNYUAuoLifBhpq-p/view?usp=drive
 • Структура звонка
 • Страхи и возражения клиентов
 • Первые скрипты
-• Ссылка на видео урок: https://youtu.be/Hbi6CJexYQU`,
+• Ссылка на видео урок: https://youtu.be/q7rgps6sVh0`,
     materials: [
       {
         title: 'Звонок. Как правильно выходить на контакт',
@@ -388,7 +388,18 @@ https://drive.google.com/file/d/1s7jiYLANly377z3HwNYUAuoLifBhpq-p/view?usp=drive
 • Что такое этика общения с клиентом
 • Представьте, что клиент недоволен и раздражён. Как вы будете с ним общаться?
 • Изучить проект One Development Stay&Rent + ТЕСТ`,
-    additionalText: `Оставляю тебе всю информацию по проекту ONE DEVELOPMENT Stay&Rent 📚 - https://docs.google.com/document/d/1BDCNDZcYRk92RXfvjSGGugTN_UeplcvgG7skhPAqWpM/edit?tab=t.dyzh0s1ch7u`
+    additionalText: `Оставляю тебе всю информацию по проекту ONE DEVELOPMENT Stay&Rent📚
+Пожалуйста, внимательно изучи материал — это очень важно ❗
+📌 По этой информации позже будет тест.
+ 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
+
+https://drive.google.com/drive/folders/1J18n9tkHtLqUurtPR57wPcJT6xDzLQHV?usp=sharing
+
+https://drive.google.com/file/d/1VCFp02WwD6RYB3GlZ77mFfiaAod5gIlR/view?usp=drive_link - ❗️ Обратите внимание!
+Представленная картинка носит исключительно ознакомительный характер и является примером.
+Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
+`
   },
   {
     title: 'ДЕНЬ 5 - Звонки',
