@@ -223,7 +223,7 @@ const lessons = [
     additionalText: `Оставляю тебе всю информацию по проекту BATMSHENI INTOURIST 📚
 Пожалуйста, внимательно изучи материал - это очень важно ❗
 📌 По этой информации позже будет тест.
- 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
 Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
 
  https://drive.google.com/file/d/16EaDn2fa_gPjAwcZF6Inb9eyilAVzOOc/view?usp=drive_link - ❗️ Обратите внимание!
@@ -271,7 +271,7 @@ const lessons = [
     additionalText: `Оставляю тебе всю информацию по проекту METROPOL OVAL  📚
 Пожалуйста, внимательно изучи материал — это очень важно ❗
 📌 По этой информации позже будет тест.
- 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
 Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
 
 https://drive.google.com/drive/folders/1vOUIU-rlMz-QUM_UV6vupBSdnW-spFms
@@ -345,7 +345,7 @@ https://drive.google.com/file/d/1-eyyOaX7Wzp70i3y44XaITqB2MNkjdgD/view?usp=drive
     additionalText: `Оставляю тебе всю информацию по проекту NEXT GROUP ADDRESS📚
 Пожалуйста, внимательно изучи материал — это очень важно ❗
 📌 По этой информации позже будет тест.
- 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
 Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
 
 https://drive.google.com/drive/folders/1-SNP7fs1d3niwJQFoSO4Glga6isQvl5O
@@ -391,7 +391,7 @@ https://drive.google.com/file/d/1s7jiYLANly377z3HwNYUAuoLifBhpq-p/view?usp=drive
     additionalText: `Оставляю тебе всю информацию по проекту ONE DEVELOPMENT Stay&Rent📚
 Пожалуйста, внимательно изучи материал — это очень важно ❗
 📌 По этой информации позже будет тест.
- 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
 Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
 
 https://drive.google.com/drive/folders/1J18n9tkHtLqUurtPR57wPcJT6xDzLQHV?usp=sharing
@@ -442,7 +442,7 @@ https://drive.google.com/file/d/1VCFp02WwD6RYB3GlZ77mFfiaAod5gIlR/view?usp=drive
     additionalText: `Оставляю тебе всю информацию по проекту   Smart Development  Summer 365  📚
 Пожалуйста, внимательно изучи материал — это очень важно ❗
 📌 По этой информации позже будет тест.
- 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
 Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
 
 https://drive.google.com/drive/folders/1l_1nOA28mv6tSMJz1HZlkxnlpdUdv5py
@@ -501,7 +501,7 @@ https://drive.google.com/file/d/1Q5a8mBSwe-zcVmAa5KUjRNPJwGlLAO7a/view?usp=drive
     additionalText: `Оставляю тебе всю информацию по проекту  SILK: Silk Towers  📚
 Пожалуйста, внимательно изучи материал — это очень важно ❗
 📌 По этой информации позже будет тест.
- 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
 Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
 
 https://drive.google.com/drive/folders/1qkh5pEZe2OxrXaoJAaKZgXEfgCJi7dXg?usp=drive_link
@@ -519,28 +519,23 @@ https://drive.google.com/file/d/1QcDUwtN9_YjsuzV1rGGecQ85s0fnK_a0/view?usp=drive
 • Этапы сделки
 • Бронирование
 • Договоры
-
-Работа с возражениями клиента есть в базе знаний.`,
+• Ссылка на видео урок: https://youtu.be/obEZmmut8Vo`,
     materials: [
       {
-        title: 'Работа с возражениями клиента',
-        url: 'https://docs.google.com/document/d/16LbJ32XC_PCpIwBXhwYCfJY23kpiHFnz5UxWUfR-IVI/edit?tab=t.gw7jr0g0jvjo'
+        title: 'Документы по сделке с недвижимостью в Грузии',
+        url: 'https://drive.google.com/file/d/1gWOm1soz10PRZlnWqSveKkAktQW-CSz8/view'
       },
       {
-        title: 'Документы по сделке',
-        url: 'https://docs.google.com/document/d/16LbJ32XC_PCpIwBXhwYCfJY23kpiHFnz5UxWUfR-IVI/edit?tab=t.gw7jr0g0jvjo'
+        title: 'Чек-лист закрытие сделки',
+        url: 'https://drive.google.com/file/d/18hK4VJG4wVvUzyY7R7DFnUC6n6DqONet/view'
       },
       {
-        title: 'Этапы сделки',
-        url: 'https://docs.google.com/document/d/16LbJ32XC_PCpIwBXhwYCfJY23kpiHFnz5UxWUfR-IVI/edit?tab=t.gw7jr0g0jvjo'
+        title: 'Бронирование недвижимости',
+        url: 'https://drive.google.com/file/d/1V5jJefdLndtzGekUWnhMyFXT05ur55pX/view'
       },
       {
-        title: 'Бронирование',
-        url: 'https://docs.google.com/document/d/16LbJ32XC_PCpIwBXhwYCfJY23kpiHFnz5UxWUfR-IVI/edit?tab=t.ija76gadxnv9'
-      },
-      {
-        title: 'Договоры',
-        url: 'https://docs.google.com/document/d/16LbJ32XC_PCpIwBXhwYCfJY23kpiHFnz5UxWUfR-IVI/edit?tab=t.6y9slqffocy5'
+        title: 'Договоры в недвижимости',
+        url: 'https://drive.google.com/file/d/1kTR_iuZgoz8SIWguKC-3zKMt8VJWoorM/view'
       }
     ],
     homeworkUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScmcBLgDfq6vju-D4A8mfZ-jYPI56tY1BVaH6Kmkt0kYQNm6A/viewform?usp=header',
@@ -551,6 +546,18 @@ https://drive.google.com/file/d/1QcDUwtN9_YjsuzV1rGGecQ85s0fnK_a0/view?usp=drive
 • Если вы не знаете ответ на вопрос клиента, как вы поступите?
 • Подготовить 3 возражения клиента и варианты их отработки
 • Изучить проект Pontus Rotana + ТЕСТ`
+    additionalText: `Оставляю тебе всю информацию по проекту  Pontus Rotana  📚
+Пожалуйста, внимательно изучи материал — это очень важно ❗
+📌 По этой информации позже будет тест.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
+
+https://drive.google.com/drive/u/1/folders/1F-ocYcICbu2tddFZPMgkgohxtlqE20Rc
+
+https://drive.google.com/file/d/16etnPETMMU_1mJYo0b2SKartfu77fEak/view - ❗️ Обратите внимание!
+Представленная картинка носит исключительно ознакомительный характер и является примером.
+Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
+`
   },
   {
     title: 'ДЕНЬ 8 - Психотипы клиентов и показы',
