@@ -196,7 +196,7 @@ const lessons = [
 • Структура работы в PON Estate
 • Цели обучения и правила курса
 • Знакомство с руководителем компании Андреем Пономаренко
-• Ссылка на видео урок: https://youtu.be/iSSxqqSrRy8
+• Ссылка на видео урок: https://youtu.be/zMfvPjXGVbU
 `,
     materials: [
       {
@@ -221,7 +221,14 @@ const lessons = [
 • Написать, почему вы решили работать в недвижимости
 • Сформулировать личную цель на время обучения и на ближайшие 6 месяцев
 • Изучить Intourist Palace Hotel (Мы направим материалы по объекту, после чего будет тест по нему + дз)`,
-    additionalText: `Оставляю тебе всю информацию по проекту BATMSHENI INTOURIST 📚 и ссылку на него https://docs.google.com/document/d/1kPVAowcRpHKklw8pqBtvjvxtnO5xn8C5Jvd8s6ZFNj4/edit?tab=t.rowiuij0gzqr`
+    additionalText: `Оставляю тебе всю информацию по проекту BATMSHENI INTOURIST 📚
+Пожалуйста, внимательно изучи материал - это очень важно ❗
+📌 По этой информации позже будет тест.
+ 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
+ https://drive.google.com/file/d/16EaDn2fa_gPjAwcZF6Inb9eyilAVzOOc/view?usp=drive_link
+ https://drive.google.com/drive/folders/1XB1upPL445r74DQPnW5qJQ4mer51D7_M?usp=drive_link
+`
   },
   {
     title: 'ДЕНЬ 2 - Рынок недвижимости Батуми',
