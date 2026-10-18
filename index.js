@@ -455,10 +455,13 @@ https://drive.google.com/file/d/1Q5a8mBSwe-zcVmAa5KUjRNPJwGlLAO7a/view?usp=drive
   {
     title: 'ДЕНЬ 6 - Воронка продаж и работа с возражениями',
     text: `Сегодня ты узнаешь:
-• Что такое воронка продаж в недвижимости
-• Этапы воронки: лид → контакт → интерес → решение → сделка
-• Технику СПВ (свойство – преимущество – выгода)
-• Отработку ключевых возражений клиента: «дорого», «я подумаю», «я сравниваю», «мне не срочно»
+• Презентация продукта
+• Техника СПВ в недвижимости
+• Шаблоны СПВ
+• Отработка возражений
+• Шаблоны отработки возражений
+• Закрытие сделки
+• Послепродажное сопровождение
 • Ссылка на видео урок: https://youtu.be/9B5lZzerj5w`,
     materials: [
       {
@@ -514,11 +517,10 @@ https://drive.google.com/file/d/1QcDUwtN9_YjsuzV1rGGecQ85s0fnK_a0/view?usp=drive
   {
     title: 'ДЕНЬ 7 - Отработка возражений и этапы сделки',
     text: `Сегодня ты узнаешь:
-• Работу с возражениями клиента
-• Документы по сделке
-• Этапы сделки
-• Бронирование
-• Договоры
+• Документы по сделке с недвижимостью в Грузии
+• Чек-лист закрытие сделки
+• Бронирование недвижимости
+• Договоры в недвижимости
 • Ссылка на видео урок: https://youtu.be/obEZmmut8Vo`,
     materials: [
       {
@@ -614,32 +616,43 @@ https://drive.google.com/file/d/1CFLa7VrWCpHxCC9rY1MaAGLNHswvxZGW/view?usp=shari
   {
     title: 'ДЕНЬ 9 - Чек-листы агента',
     text: `Сегодня ты узнаешь:
-• Чек-лист звонка
-• Чек-лист встречи
-• Чек-лист сделки
-
-Эти инструменты помогут тебе структурировать работу и ничего не упустить!`,
+• Чек-лист звонка клиенту
+• Чек-лист встречи с клиентом
+• Чек-лист сделки с клиентом
+• Ссылка на видео урок: https://youtu.be/wPViWlFyBs4`,
     materials: [
       {
-        title: 'Чек-лист звонка',
-        url: 'https://docs.google.com/document/d/10DNi9qd4AseI-sswsUKWdJLbKI1_DRukZL_ZGzArKao/edit?tab=t.0'
+        title: 'Чек-лист звонка клиенту',
+        url: 'https://drive.google.com/file/d/1H8C0Ks9DIo0Q5fmJe7A7L3vyJ1X-WeCw/view'
       },
       {
-        title: 'Чек-лист встречи',
-        url: 'https://docs.google.com/document/d/10DNi9qd4AseI-sswsUKWdJLbKI1_DRukZL_ZGzArKao/edit?tab=t.s2c0d5n0o5mz'
+        title: 'Чек-лист встречи с клиентом',
+        url: 'https://drive.google.com/file/d/1IPC8uPp2ZwN_hRbmxep4fgjuTMT6aQ27/view'
       },
       {
-        title: 'Чек-лист сделки',
-        url: 'https://docs.google.com/document/d/10DNi9qd4AseI-sswsUKWdJLbKI1_DRukZL_ZGzArKao/edit?tab=t.oshrtcvv96yp'
-      }
+        title: 'Чек-лист сделки с клиентом',
+        url: 'https://drive.google.com/file/d/1x27LVziuvij1haaDdIGbTwkMOnTuAiO7/view'
+      },
     ],
-    homeworkUrl: 'https://forms.gle/6KN3ujeuyQCxovU27',
+    homeworkUrl: 'https://forms.gle/RtHPoqsYSAAtgN8s9',
     homeworkText: `Домашнее задание:
 • Составить чек-лист первого звонка клиенту
 • Составить чек-лист личной встречи или Zoom-встречи
 • Составить чек-лист сопровождения сделки
 • Готовы ли вы работать с большим количеством информации, учиться ежедневно и выполнять план? Почему?
-• Изучить проект Queen's Residence + ТЕСТ`
+• Изучить проект VR Holdin VR Shekvetili Forest-Beach + ТЕСТ`,
+    additionalText: `Оставляю тебе всю информацию по проекту  VR Holdin VR Shekvetili Forest-Beach 📚
+Пожалуйста, внимательно изучи материал — это очень важно ❗
+📌 По этой информации позже будет тест.
+📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
+Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
+
+https://drive.google.com/drive/folders/1XR8WmgwBG8rMu2l88zK8nw5vfYNQf0g4
+
+https://drive.google.com/file/d/1WzAql1Bmhuc-fxLb1Rj96aeBGFxDMAxR/view?usp=drive_link - ❗️ Обратите внимание!
+Представленная картинка носит исключительно ознакомительный характер и является примером.
+Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
+`
   },
   {
     title: 'ДЕНЬ 10 - Итог теории',
