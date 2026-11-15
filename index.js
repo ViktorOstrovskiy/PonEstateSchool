@@ -505,14 +505,14 @@ https://drive.google.com/file/d/1Q5a8mBSwe-zcVmAa5KUjRNPJwGlLAO7a/view?usp=drive
 • Написать пример ответа клиенту на возражение «дорого»
 • Подготовить вариант следующего шага для клиента после отказа
 • Как вы планируете развиваться в профессии в первые 3–6 месяцев работы?
-• Изучить проект SILK: Silk Towers - Green Cape Botanico + ТЕСТ`,
+• Изучить проект SILK: Silk Towers + ТЕСТ`,
     additionalText: `Оставляю тебе всю информацию по проекту  SILK: Silk Towers  📚
 Пожалуйста, внимательно изучи материал — это очень важно ❗
 📌 По этой информации позже будет тест.
 📌 Эти знания также понадобятся тебе в дальнейшей профессии агента по недвижимости.
 Чем лучше ты разберёшься сейчас, тем увереннее будешь чувствовать себя в работе 💼✨
 
-https://drive.google.com/drive/folders/1qkh5pEZe2OxrXaoJAaKZgXEfgCJi7dXg?usp=drive_link
+https://drive.google.com/drive/folders/1veOFy07dQ6s--bLaW-MgQurAfTOZg5ky?usp=sharing
 
 https://drive.google.com/file/d/1QcDUwtN9_YjsuzV1rGGecQ85s0fnK_a0/view?usp=drive_link - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
