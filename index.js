@@ -215,7 +215,7 @@ const lessons = [
         url: 'https://drive.google.com/file/d/1z79iBA4BbZP4EjpPHmCHe2O23-gsCn38/view'
       }
     ],
-    homeworkUrl: 'https://forms.gle/51zvGQH7waJT52XdA',
+    homeworkUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSd7z3s5rYxUe__K-nSEAwP6S205Xxo4HBgpu6gjqyBGfizc4A/viewform?usp=dialog',
     homeworkText: `Домашнее задание:
 • Написать, почему вы решили работать в недвижимости
 • Сформулировать личную цель на время обучения и на ближайшие 6 месяцев
@@ -336,7 +336,7 @@ https://drive.google.com/file/d/1-eyyOaX7Wzp70i3y44XaITqB2MNkjdgD/view?usp=drive
         url: 'https://drive.google.com/file/d/1GuWCnqlK5aM02fev1NFl4QMCf8usU_aD/view'
       },
     ],
-    homeworkUrl: 'https://forms.gle/a9vTP9aD4dfBvyVF7',
+    homeworkUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSenpDLJaQKMZcvMEHwXOwqqmXRzly4Cl0IYlP0sR7NBoYB0zA/viewform?usp=dialog',
     homeworkText: `Домашнее задание:
 • Описать разницу между холодными, тёплыми и горячими лидами
 • Выписать основные ошибки новичков при работе с лидами
