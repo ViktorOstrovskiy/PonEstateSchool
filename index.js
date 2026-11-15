@@ -231,7 +231,8 @@ const lessons = [
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
  
  https://drive.google.com/drive/folders/1XB1upPL445r74DQPnW5qJQ4mer51D7_M?usp=drive_link
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/1RKr6KKki35vZZIc5enzc7jrL02c3lnHJ/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 2 - Рынок недвижимости Батуми',
@@ -281,7 +282,8 @@ https://drive.google.com/file/d/1-eyyOaX7Wzp70i3y44XaITqB2MNkjdgD/view?usp=drive
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
 
 Сылка на сайт компании https://gofile.me/7AoxL/Ngp5To80t
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/1z1MmKCDjdQkRChuisSyAwxtbEcRqcvv0/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 3 - Клиенты и лиды',
@@ -353,7 +355,8 @@ https://drive.google.com/drive/folders/1-SNP7fs1d3niwJQFoSO4Glga6isQvl5O
 https://drive.google.com/file/d/1s7jiYLANly377z3HwNYUAuoLifBhpq-p/view?usp=drive_link - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/15gQwD6W3-xZZ5R56EhSUTyIKe5Knsfe9/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 4 - Сообщения клиенту и коммуникация',
@@ -399,7 +402,8 @@ https://drive.google.com/drive/folders/1J18n9tkHtLqUurtPR57wPcJT6xDzLQHV?usp=sha
 https://drive.google.com/file/d/1VCFp02WwD6RYB3GlZ77mFfiaAod5gIlR/view?usp=drive_link - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/1ahJQOd25EJgSB8NFDi8UnIX9JD21MvBx/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 5 - Звонки',
@@ -450,7 +454,8 @@ https://drive.google.com/drive/folders/1l_1nOA28mv6tSMJz1HZlkxnlpdUdv5py
 https://drive.google.com/file/d/1Q5a8mBSwe-zcVmAa5KUjRNPJwGlLAO7a/view?usp=drive_link - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/1qIXcnzJscTm6oJPlRqHsiwOUP4eVXDHN/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 6 - Воронка продаж и работа с возражениями',
@@ -512,7 +517,8 @@ https://drive.google.com/drive/folders/1qkh5pEZe2OxrXaoJAaKZgXEfgCJi7dXg?usp=dri
 https://drive.google.com/file/d/1QcDUwtN9_YjsuzV1rGGecQ85s0fnK_a0/view?usp=drive_link - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/1Gc1zPMq9DVLZXjTfTXliRu9CQqcwpp02/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 7 - Отработка возражений и этапы сделки',
@@ -559,7 +565,8 @@ https://drive.google.com/drive/u/1/folders/1F-ocYcICbu2tddFZPMgkgohxtlqE20Rc
 https://drive.google.com/file/d/16etnPETMMU_1mJYo0b2SKartfu77fEak/view - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/1Ilm3LMmZ4AXVaGWvdZovvcyxaH8vfPJv/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 8 - Психотипы клиентов и показы',
@@ -611,7 +618,8 @@ https://drive.google.com/drive/folders/15SO4OYD3t4PJbxXrHGOKxfoUaPEehso_?usp=dri
 https://drive.google.com/file/d/1CFLa7VrWCpHxCC9rY1MaAGLNHswvxZGW/view?usp=sharing - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/1lXlHlgrysG1ESVZ7M9X8stMVMSQ3Ef0y/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 9 - Чек-листы агента',
@@ -652,7 +660,8 @@ https://drive.google.com/drive/folders/1XR8WmgwBG8rMu2l88zK8nw5vfYNQf0g4
 https://drive.google.com/file/d/1WzAql1Bmhuc-fxLb1Rj96aeBGFxDMAxR/view?usp=drive_link - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
-`
+`,
+    projectVideoUrl: 'https://drive.google.com/file/d/1PIXXoZ5dWfnVPKdgDb0p8kIO9zd6IoXk/view?usp=drive_link'
   },
   {
     title: 'ДЕНЬ 10 — ИТОГ ТЕОРЕТИЧЕСКОГО ОБУЧЕНИЯ',
@@ -677,9 +686,18 @@ https://drive.google.com/file/d/1WzAql1Bmhuc-fxLb1Rj96aeBGFxDMAxR/view?usp=drive
 7. Рассматриваете ли вы возможность дальнейшего профессионального развития в сфере недвижимости вместе с Pon Estate?`,
     additionalText: `💬 Важно: нам интересно ваше личное мнение, поэтому просим отвечать своими словами, искренне и развёрнуто.
 
-🚀 Поздравляем с завершением теоретической части обучения! Впереди — практика и первые шаги в профессии агента по недвижимости!`
+🚀 Поздравляем с завершением теоретической части обучения! Впереди — практика и первые шаги в профессии агента по недвижимости!`,
+    projectVideoUrl: '' // TODO: ссылка на обучающее видео о проекте
   }
 ]
+
+// Блок з навчальним відео по проекту (виводиться в самому кінці уроку, якщо задано projectVideoUrl)
+function projectVideoBlock(lesson) {
+  if (!lesson.projectVideoUrl) return ''
+  return `Для более глубокого изучения проектов рекомендуем также посмотреть обучающее видео о проекте.\n\n` +
+    `🔗 Ссылка на видео: ${lesson.projectVideoUrl}\n\n` +
+    `📌 Просим обязательно ознакомиться с материалом — эта информация пригодится вам в дальнейшей работе с клиентами.\n\n`
+}
 
 // Допоміжна функція для отримання сьогоднішньої дати
 function today() {
@@ -810,6 +828,9 @@ bot.start(async (ctx) => {
       message += `${lesson.additionalText}\n\n`
     }
 
+    // Додаємо блок з відео по проекту (якщо є)
+    message += projectVideoBlock(lesson)
+
     message += `После выполнения вернитесь завтра и нажмите "Продолжить".`
 
     await ctx.reply(
@@ -933,6 +954,9 @@ bot.hears('Продолжить ▶️', async (ctx) => {
     if (lesson.additionalText) {
       message += `${lesson.additionalText}\n\n`
     }
+
+    // Додаємо блок з відео по проекту (якщо є)
+    message += projectVideoBlock(lesson)
 
     // Для останнього уроку (10-й день) не пишемо про повернення завтра
     if (nextLessonNumber < lessons.length) {
