@@ -567,7 +567,7 @@ https://drive.google.com/file/d/1QcDUwtN9_YjsuzV1rGGecQ85s0fnK_a0/view?usp=drive
 
 https://drive.google.com/drive/u/1/folders/1F-ocYcICbu2tddFZPMgkgohxtlqE20Rc
 
-https://drive.google.com/file/d/16etnPETMMU_1mJYo0b2SKartfu77fEak/view - ❗️ Обратите внимание!
+https://drive.google.com/file/d/1w8kZovSMB1ixLb5kjde1xxCipRJ8qqz9/view?usp=drive_link - ❗️ Обратите внимание!
 Представленная картинка носит исключительно ознакомительный характер и является примером.
 Актуальные цены, наличие квартир и условия покупки необходимо каждый раз уточнять непосредственно у застройщика, поскольку информация регулярно обновляется. Каждый месяц могут меняться цены, условия рассрочки и доступные квартиры.
 `,
