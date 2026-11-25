@@ -92,6 +92,11 @@ async function initDatabase() {
       CREATE INDEX IF NOT EXISTS idx_users_has_access ON users(has_access)
     `)
 
+    // Додаємо лічильник уроків, отриманих за день last_lesson_date (якщо не існує)
+    await pool.query(`
+      ALTER TABLE users ADD COLUMN IF NOT EXISTS lessons_today INTEGER DEFAULT 0
+    `)
+
     // Створюємо таблицю access_codes для одноразових кодів
     await pool.query(`
       CREATE TABLE IF NOT EXISTS access_codes (
@@ -699,6 +704,9 @@ function projectVideoBlock(lesson) {
     `📌 Просим обязательно ознакомиться с материалом — эта информация пригодится вам в дальнейшей работе с клиентами.\n\n`
 }
 
+// Скільки уроків можна отримати за один день
+const LESSONS_PER_DAY = 2
+
 // Допоміжна функція для отримання сьогоднішньої дати
 function today() {
   return new Date().toISOString().split('T')[0]
@@ -786,6 +794,7 @@ bot.start(async (ctx) => {
 
     // Створюємо або оновлюємо користувача
     // При /start завжди встановлюємо current_lesson = 1 та last_lesson_date = поточна дата
+    // Перший урок зараховується як 1 урок за сьогодні
     const todayDate = today()
     console.log('🔍 /start команда:')
     console.log(`   Telegram ID: ${telegramId}`)
@@ -793,12 +802,12 @@ bot.start(async (ctx) => {
     console.log(`   Сегодняшняя дата: ${todayDate}`)
 
     await pool.query(`
-      UPDATE users 
-      SET current_lesson = 1, last_lesson_date = $2
+      UPDATE users
+      SET current_lesson = 1, last_lesson_date = $2, lessons_today = 1
       WHERE telegram_id = $1
     `, [telegramId, todayDate])
 
-    console.log(`   ✅ Пользователь обновлен: current_lesson=1, last_lesson_date=${todayDate}`)
+    console.log(`   ✅ Пользователь обновлен: current_lesson=1, last_lesson_date=${todayDate}, lessons_today=1`)
 
     const lesson = lessons[0]
 
@@ -878,14 +887,18 @@ bot.hears('Продолжить ▶️', async (ctx) => {
     console.log(`   Последний урок (дата): ${user.last_lesson_date ? user.last_lesson_date.toISOString().split('T')[0] : 'null'}`)
     console.log(`   Сегодняшняя дата: ${todayDate}`)
 
-    // Перевірка чи можна отримати новий урок (1 урок = 1 день)
+    // Перевірка чи можна отримати новий урок (LESSONS_PER_DAY уроки = 1 день)
+    let lessonsTaken = 0
     if (user.last_lesson_date) {
       const lastLessonDateStr = user.last_lesson_date.toISOString().split('T')[0]
       if (lastLessonDateStr === todayDate) {
-        console.log('   ❌ Доступ запрещен: урок уже получен сегодня')
-        return ctx.reply('⏳ Следующий урок будет доступен завтра.')
+        lessonsTaken = user.lessons_today || 0
+        if (lessonsTaken >= LESSONS_PER_DAY) {
+          console.log(`   ❌ Доступ запрещен: сегодня уже получено ${lessonsTaken} урока`)
+          return ctx.reply('⏳ Следующий урок будет доступен завтра.')
+        }
       }
-      console.log('   ✅ Доступ разрешен: последний урок был в другой день')
+      console.log(`   ✅ Доступ разрешен: сегодня получено ${lessonsTaken} из ${LESSONS_PER_DAY}`)
     } else {
       console.log('   ✅ Доступ разрешен: last_lesson_date не установлен')
     }
@@ -917,11 +930,12 @@ bot.hears('Продолжить ▶️', async (ctx) => {
     }
 
     // Оновлюємо дані користувача
+    const lessonsTakenNow = lessonsTaken + 1
     await pool.query(
-      'UPDATE users SET current_lesson = $1, last_lesson_date = $2 WHERE telegram_id = $3',
-      [nextLessonNumber, todayDate, telegramId]
+      'UPDATE users SET current_lesson = $1, last_lesson_date = $2, lessons_today = $3 WHERE telegram_id = $4',
+      [nextLessonNumber, todayDate, lessonsTakenNow, telegramId]
     )
-    console.log(`   ✅ Урок обновлен: current_lesson=${nextLessonNumber}, last_lesson_date=${todayDate}`)
+    console.log(`   ✅ Урок обновлен: current_lesson=${nextLessonNumber}, last_lesson_date=${todayDate}, lessons_today=${lessonsTakenNow}`)
 
     const lesson = lessons[nextLessonNumber - 1]
 
