@@ -705,7 +705,7 @@ function projectVideoBlock(lesson) {
 }
 
 // Скільки уроків можна отримати за один день
-const LESSONS_PER_DAY = 2
+const LESSONS_PER_DAY = 1
 
 // Допоміжна функція для отримання сьогоднішньої дати
 function today() {
