@@ -712,6 +712,14 @@ function today() {
   return new Date().toISOString().split('T')[0]
 }
 
+// Субота або неділя за часом Батумі — у вихідні уроки не видаємо
+function isWeekend() {
+  const weekday = new Date().toLocaleDateString('en-US', { timeZone: 'Asia/Tbilisi', weekday: 'short' })
+  return weekday === 'Sat' || weekday === 'Sun'
+}
+
+const WEEKEND_MESSAGE = '📅 В выходные уроки не проводятся.\nВозвращайтесь в понедельник!'
+
 // Обробка команди /activate для активації коду доступу
 bot.command('activate', async (ctx) => {
   try {
@@ -790,6 +798,11 @@ bot.start(async (ctx) => {
         'Используйте команду: /activate ВАШ_КОД\n\n' +
         'Если у вас нет кода, обратитесь к администратору.'
       )
+    }
+
+    // У вихідні уроки не видаємо
+    if (isWeekend()) {
+      return ctx.reply(WEEKEND_MESSAGE)
     }
 
     // Створюємо або оновлюємо користувача
@@ -876,6 +889,12 @@ bot.hears('Продолжить ▶️', async (ctx) => {
         'Используйте команду: /activate ВАШ_КОД\n\n' +
         'Если у вас нет кода, обратитесь к администратору.'
       )
+    }
+
+    // У вихідні уроки не видаємо
+    if (isWeekend()) {
+      console.log('   ❌ Доступ запрещен: выходной день')
+      return ctx.reply(WEEKEND_MESSAGE)
     }
 
     const todayDate = today()
